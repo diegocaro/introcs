@@ -16,6 +16,9 @@ with contextlib.redirect_stdout(None):
     import pygame
     import pygame.gfxdraw
     import pygame.font
+    
+    # Keyboard constants
+    from pygame.constants import *
 
 import color
 import string
@@ -664,7 +667,7 @@ def _checkForEvents():
         if event.type == pygame.QUIT:
             sys.exit()
         elif event.type == pygame.KEYDOWN:
-            _keysTyped = [event.unicode] + _keysTyped
+            _keysTyped = [event.key] + _keysTyped
         elif (event.type == pygame.MOUSEBUTTONUP) and \
             (event.button == 3):
             _saveToFile()
@@ -748,6 +751,24 @@ def mouseY():
 #-----------------------------------------------------------------------
 # End added by Alan J. Broder
 #-----------------------------------------------------------------------
+
+#-----------------------------------------------------------------------
+# Begin added by Diego Caro
+#-----------------------------------------------------------------------
+
+# Functions for dealing with time
+
+def pause(ms):
+    """
+    Pause for a given number of milliseconds. This function will sleep
+    the process to share the processor with other programas.
+    """
+    return pygame.time.wait(ms)
+
+#-----------------------------------------------------------------------
+# End added by Diego Caro
+#-----------------------------------------------------------------------
+
 
 #-----------------------------------------------------------------------
 
