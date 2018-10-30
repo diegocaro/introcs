@@ -1,3 +1,4 @@
+Note, this document is a copy of https://github.com/josiest/pygtails/blob/master/docs/pygstants.rst by Josie Thompson.
 ================
 Pygame Constants
 ================
