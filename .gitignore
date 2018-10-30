@@ -1,0 +1,7 @@
+__pycache__
+.ipynb_checkpoints
+
+# macos trash
+.DS_Store
+.DS_Store?
+Icon
