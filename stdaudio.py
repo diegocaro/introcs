@@ -22,7 +22,7 @@ _AUDIO_BUFFER_SIZE = 1024    # In number of samples
 _CHECK_RATE = 44100          # How often to check the queue
 
 _myBuffer = []
-_MY_BUFFER_MAX_LENGTH = 4096 # Determined experimentally.
+_MY_BUFFER_MAX_LENGTH = 1024#4096 # Determined experimentally.
 
 def wait():
     """
