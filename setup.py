@@ -28,6 +28,9 @@ setup(
     py_modules=['color', 'instream', 'outstream', 'picture', 
         'stdarray', 'stdaudio', 'stddraw', 'stdio', 'stdrandom', 
         'stdstats'],
-    cmdclass={'install': MyInstall}
+    cmdclass={'install': MyInstall},
+    install_requires=[
+              'pygame',
+          ],
 )
 
