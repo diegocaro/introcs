@@ -2,12 +2,12 @@ Extracted from https://introcs.cs.princeton.edu/python/code/
 
 Install using:
 ```
-pip install git+https://github.com/diegocaro/introcs
+pip install https://github.com/diegocaro/introcs/archive/master.zip
 ```
 
 If the installation fails, try adding `--user` at the end:
 ```
-pip install git+https://github.com/diegocaro/introcs --user
+pip install https://github.com/diegocaro/introcs/archive/master.zip --user
 ```
 
 # Credits
