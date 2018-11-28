@@ -74,6 +74,9 @@ _DEFAULT_PEN_COLOR = color.BLACK
 _DEFAULT_FONT_FAMILY = 'Helvetica'
 _DEFAULT_FONT_SIZE = 12
 
+_DEFAULT_KEY_DELAY = 50 # delay of the second keydown event in milliseconds
+_DEFAULT_KEY_INTERVAL = 50 # interval between several keydown events in milliseconds
+
 _xmin = None
 _ymin = None
 _xmax = None
@@ -106,6 +109,7 @@ _mousePos = None
 #-----------------------------------------------------------------------
 # End added by Alan J. Broder
 #-----------------------------------------------------------------------
+
 
 #-----------------------------------------------------------------------
 
@@ -176,6 +180,7 @@ def setCanvasSize(w=_DEFAULT_CANVAS_SIZE, h=_DEFAULT_CANVAS_SIZE):
     _surface = pygame.Surface((w, h))
     _surface.fill(_pygameColor(WHITE))
     _windowCreated = True
+    pygame.key.set_repeat(_DEFAULT_KEY_DELAY, _DEFAULT_KEY_INTERVAL)
 
 def setXscale(min=_DEFAULT_XMIN, max=_DEFAULT_XMAX):
     """
