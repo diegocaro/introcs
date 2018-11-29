@@ -74,8 +74,8 @@ _DEFAULT_PEN_COLOR = color.BLACK
 _DEFAULT_FONT_FAMILY = 'Helvetica'
 _DEFAULT_FONT_SIZE = 12
 
-_DEFAULT_KEY_DELAY = 50 # delay of the second keydown event in milliseconds
-_DEFAULT_KEY_INTERVAL = 50 # interval between several keydown events in milliseconds
+_DEFAULT_KEY_DELAY = 100 # delay of the second keydown event in milliseconds
+_DEFAULT_KEY_INTERVAL = 100 # interval between several keydown events in milliseconds
 
 _xmin = None
 _ymin = None
